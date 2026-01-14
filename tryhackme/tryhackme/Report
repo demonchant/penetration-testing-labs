@@ -1,0 +1,28 @@
+The scan revealed hidden directories:
+- /images
+- /bank-transfer
+
+## Exploitation
+The `/bank-transfer` endpoint was accessed directly without authentication.
+
+Using the account number `8881`, funds were deposited into the account.
+
+## Impact
+The account balance changed from negative to positive without authorization.
+The application displayed the message:
+
+**BANK-HACKED**
+
+This confirms a successful exploitation of unprotected sensitive functionality.
+
+## Vulnerability
+- Broken Access Control
+- Unauthenticated access to administrative functionality
+
+## Risk
+High – attackers can manipulate financial data without credentials.
+
+## Recommendation
+- Enforce authentication and authorization on all sensitive endpoints
+- Restrict access to administrative functions
+- Implement role-based access control (RBAC)
