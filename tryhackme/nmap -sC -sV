@@ -1,0 +1,11 @@
+## Findings
+- Open ports discovered
+- Services identified
+- Potential attack surface noted
+
+## Notes
+This lab focused on understanding basic recon techniques and interpreting scan results.
+
+## Lessons Learned
+- Importance of thorough enumeration
+- How service versions guide attack paths
